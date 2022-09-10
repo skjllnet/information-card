@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100rem;
+  width: 100rem;
+  height: 100%;
+  margin: 0 auto;
+  // box-shadow: 0 0 5rem rgba($color-primary-dark, 0.8);
+
+  .card {
+    background-color: $color-primary-dark;
+    border: 0.78rem solid $color-black;
+    // border-radius: 5px;
+    width: 37rem;
+    padding: 1.4rem;
+    box-shadow: 0 0 4rem rgba($color-black, 1);
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+
+    &-heading {
+      font-size: 1.15rem;
+      letter-spacing: 0.1rem;
+      padding-left: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &-hobbies {
+      position: absolute;
+      font-size: 1.15rem;
+      letter-spacing: 0.1rem;
+      top: 48px;
+      right: 4px;
+      // transform-origin: 0 0;
+      // transform: rotate(90deg);
+      text-orientation: sideways-right;
+      writing-mode: vertical-rl;
+      z-index: 999;
+    }
+
+    &__image-1 {
+      width: 100%;
+      border-bottom: 1px dotted #444;
+      padding: 1rem;
+      transform: translateZ(20px);
+    }
+
+    &__info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.3rem;
+      margin: 1rem 0 2rem 0;
+
+      &--data {
+        font-size: 1.15rem;
+      }
+
+      &--data strong {
+        font-size: 1.08rem;
+      }
+    }
+
+    &__trade {
+      margin-bottom: 1rem;
+
+      &--title {
+        margin-bottom: 1rem;
+        letter-spacing: 0.1rem;
+      }
+
+      &--icons {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__projects {
+      margin-bottom: 2rem;
+
+      &--title {
+        margin-bottom: 1rem;
+        letter-spacing: 0.1rem;
+      }
+
+      &--list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      &--link {
+        font-size: 1.15rem;
+        letter-spacing: 0.05rem;
+        font-weight: 600;
+        color: red;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      &--link:hover {
+        color: $color-white;
+        transform: translateY(3px);
+        text-decoration: underline;
+      }
+    }
+
+    &__social {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      border-top: 1px dotted #444;
+      padding-top: 1.5rem;
+      margin-bottom: 0.5rem;
+
+      &--link {
+        opacity: 0.5;
+        transition: all 0.3s ease;
+      }
+
+      &--link:hover {
+        opacity: 1;
+        transform: translateY(3px);
+      }
+    }
+
+    &__data {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-top: 1rem;
+    }
+  }
+}

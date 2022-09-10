@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/30adf19c8e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>information-card</title>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="card js-tilt"
+        data-tilt
+        data-tilt-max="5"
+        data-tilt-speed="2000"
+        data-tilt-perspective="800"
+        data-tilt-glare
+        data-tilt-max-glare="0.1"
+        style="transform-style: preserve-3d"
+      >
+        <div class="card-heading">
+          <i class="fa-solid fa-flag-usa"></i> united states citizen
+        </div>
+        <div class="card-hobbies">
+          hobbies - mountain-biking / dog-walking / comics
+        </div>
+        <div class="card__image">
+          <img
+            src="assets/profile.jpg"
+            class="card__image-1"
+            alt="a direct headshot of my face"
+          />
+        </div>
+
+        <div class="card__info">
+          <p class="card__info--data">
+            <strong>name:</strong> vassil iliev kurktchiev
+          </p>
+          <p class="card__info--data">
+            <strong>occupation:</strong> front-end engineer
+          </p>
+          <p class="card__info--data">
+            <strong>location:</strong> south carolina, usa
+          </p>
+          <p class="card__info--data">
+            <strong>alumni:</strong> carolina gamecock
+          </p>
+          <p class="card__info--data">
+            <strong>e-mail:</strong> vassil.kurk@gmail.com
+          </p>
+          <p class="card__info--data">
+            <strong>website:</strong>
+            <a
+              href="http://vassilly.com/"
+              class="card__projects--link"
+              target="_blank"
+              >vassilly.com</a
+            >
+          </p>
+        </div>
+
+        <div class="card__trade">
+          <h2 class="card__trade--title">software</h2>
+          <div class="card__trade--icons">
+            <span class="card__trade--icon"
+              ><i class="fa-brands fa-html5 fa-3x"></i
+            ></span>
+            <span class="card__trade--icon"
+              ><i class="fa-brands fa-css3-alt fa-3x"></i
+            ></span>
+            <span class="card__trade--icon"
+              ><i class="fa-brands fa-sass fa-3x"></i
+            ></span>
+            <span class="card__trade--icon"
+              ><i class="fa-brands fa-js fa-3x"></i
+            ></span>
+            <span class="card__trade--icon"
+              ><i class="fa-brands fa-react fa-3x"></i
+            ></span>
+            <span class="card__trade--icon"
+              ><i class="fa-brands fa-git-alt fa-3x"></i
+            ></span>
+            <span class="card__trade--icon"
+              ><i class="fa-brands fa-node fa-3x"></i
+            ></span>
+            <span class="card__trade--icon"
+              ><i class="fa-brands fa-wordpress fa-3x"></i
+            ></span>
+          </div>
+
+          <div class="card__projects">
+            <h2 class="card__projects--title">projects</h2>
+            <div class="card__projects--list">
+              <a
+                href="https://studiok-kitchens.com/"
+                class="card__projects--link"
+                target="_blank"
+                >studiok</a
+              >
+              <a
+                href="https://dassoxtr.com/"
+                class="card__projects--link"
+                target="_blank"
+                >dassoxtr</a
+              >
+              <a
+                href="https://davidsrudolf.com/"
+                class="card__projects--link"
+                target="_blank"
+                >david.s.rudolf</a
+              >
+              <a
+                href="https://www.nativesouthcarolina.org/"
+                class="card__projects--link"
+                target="_blank"
+                >nasca</a
+              >
+              <a
+                href="https://www.scencyclopedia.org/sce/"
+                class="card__projects--link"
+                target="_blank"
+                >encyclopedia</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card__social">
+          <a
+            rel="noreferrer"
+            href="https://codepen.io/skjllnet"
+            target="_blank"
+            class="card__social--link"
+            ><i class="fa fa-codepen fa-inverse fa-2x"></i
+          ></a>
+          <a
+            rel="noreferrer"
+            href="https://github.com/skjllnet"
+            target="_blank"
+            class="card__social--link"
+            ><i class="fa fa-github fa-inverse fa-2x"></i
+          ></a>
+          <a
+            rel="noreferrer"
+            href="https://twitter.com/skjllnet"
+            target="_blank"
+            class="card__social--link"
+            ><i class="fa fa-twitter fa-inverse fa-2x"></i
+          ></a>
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/skjllnet/"
+            target="_blank"
+            class="card__social--link"
+            ><i class="fa fa-linkedin fa-inverse fa-2x"></i
+          ></a>
+        </div>
+
+        <div class="card__data">
+          <p class="card__data--initials">vik</p>
+          <p class="card__data--skew">02111991bg - 2000usa</p>
+          <div class="card__data--restrictions"><p>restrictions: none</p></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="tilt.jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  </body>
+</html>

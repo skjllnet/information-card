@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-family: "Open Sans Pro", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.6rem; }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: linear-gradient(-120deg, #1f1f52 0%, #0b0b1d 50%);
+  color: #fff; }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100rem;
+  width: 100rem;
+  height: 100%;
+  margin: 0 auto; }
+  .container .card {
+    background-color: #0b0b1d;
+    border: 0.78rem solid #000;
+    width: 37rem;
+    padding: 1.4rem;
+    box-shadow: 0 0 4rem black;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease; }
+    .container .card-heading {
+      font-size: 1.15rem;
+      letter-spacing: 0.1rem;
+      padding-left: 1rem;
+      margin-bottom: 0.5rem; }
+    .container .card-hobbies {
+      position: absolute;
+      font-size: 1.15rem;
+      letter-spacing: 0.1rem;
+      top: 48px;
+      right: 4px;
+      text-orientation: sideways-right;
+      writing-mode: vertical-rl;
+      z-index: 999; }
+    .container .card__image-1 {
+      width: 100%;
+      border-bottom: 1px dotted #444;
+      padding: 1rem;
+      transform: translateZ(20px); }
+    .container .card__info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.3rem;
+      margin: 1rem 0 2rem 0; }
+      .container .card__info--data {
+        font-size: 1.15rem; }
+      .container .card__info--data strong {
+        font-size: 1.08rem; }
+    .container .card__trade {
+      margin-bottom: 1rem; }
+      .container .card__trade--title {
+        margin-bottom: 1rem;
+        letter-spacing: 0.1rem; }
+      .container .card__trade--icons {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 2rem; }
+    .container .card__projects {
+      margin-bottom: 2rem; }
+      .container .card__projects--title {
+        margin-bottom: 1rem;
+        letter-spacing: 0.1rem; }
+      .container .card__projects--list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+      .container .card__projects--link {
+        font-size: 1.15rem;
+        letter-spacing: 0.05rem;
+        font-weight: 600;
+        color: red;
+        text-decoration: none;
+        transition: all 0.3s ease; }
+      .container .card__projects--link:hover {
+        color: #fff;
+        transform: translateY(3px);
+        text-decoration: underline; }
+    .container .card__social {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      border-top: 1px dotted #444;
+      padding-top: 1.5rem;
+      margin-bottom: 0.5rem; }
+      .container .card__social--link {
+        opacity: 0.5;
+        transition: all 0.3s ease; }
+      .container .card__social--link:hover {
+        opacity: 1;
+        transform: translateY(3px); }
+    .container .card__data {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-top: 1rem; }

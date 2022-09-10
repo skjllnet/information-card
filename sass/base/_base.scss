@@ -1,0 +1,36 @@
+$color-primary: #1f1f52; //space-cadet
+$color-primary-light: #e6dfdc;
+$color-primary-dark: #0b0b1d;
+
+$color-primary-glow: #6fc8b5;
+
+$color-white: #fff;
+$color-black: #000;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Open Sans Pro", sans-serif;
+  font-size: 62.5%; //converting rem to base 10px / 16px
+  line-height: 1.6rem;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: linear-gradient(
+    -120deg,
+    $color-primary 0%,
+    $color-primary-dark 50%
+  );
+  color: $color-white;
+}
