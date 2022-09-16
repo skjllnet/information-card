@@ -15,8 +15,9 @@ body {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  background-image: linear-gradient(-120deg, rgba(31, 31, 82, 0.9), #0b0b1d);
+  background-size: cover;
   height: 100vh;
-  background-image: linear-gradient(-120deg, #1f1f52 0%, #0b0b1d 50%);
   color: #fff; }
 
 .container {
@@ -33,10 +34,9 @@ body {
     width: 37rem;
     padding: 1.4rem;
     box-shadow: 0 0 4rem black;
-    overflow: hidden;
     position: relative;
-    transform-style: preserve-3d;
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    overflow: hidden; }
     .container .card-heading {
       font-size: 1.15rem;
       letter-spacing: 0.1rem;
@@ -44,7 +44,7 @@ body {
       margin-bottom: 0.5rem; }
     .container .card-hobbies {
       position: absolute;
-      font-size: 1.15rem;
+      font-size: 1rem;
       letter-spacing: 0.1rem;
       top: 48px;
       right: 4px;
@@ -54,8 +54,9 @@ body {
     .container .card__image-1 {
       width: 100%;
       border-bottom: 1px dotted #444;
-      padding: 1rem;
-      transform: translateZ(20px); }
+      padding: 1rem; }
+    .container .card__assets {
+      overflow: hidden; }
     .container .card__info {
       display: grid;
       grid-template-columns: 1fr 1fr;

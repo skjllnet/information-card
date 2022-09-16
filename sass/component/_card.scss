@@ -15,10 +15,9 @@
     width: 37rem;
     padding: 1.4rem;
     box-shadow: 0 0 4rem rgba($color-black, 1);
-    overflow: hidden;
     position: relative;
-    transform-style: preserve-3d;
     transition: all 0.5s ease;
+    overflow: hidden;
 
     &-heading {
       font-size: 1.15rem;
@@ -29,12 +28,10 @@
 
     &-hobbies {
       position: absolute;
-      font-size: 1.15rem;
+      font-size: 1rem;
       letter-spacing: 0.1rem;
       top: 48px;
       right: 4px;
-      // transform-origin: 0 0;
-      // transform: rotate(90deg);
       text-orientation: sideways-right;
       writing-mode: vertical-rl;
       z-index: 999;
@@ -44,7 +41,10 @@
       width: 100%;
       border-bottom: 1px dotted #444;
       padding: 1rem;
-      transform: translateZ(20px);
+    }
+
+    &__assets {
+      overflow: hidden;
     }
 
     &__info {

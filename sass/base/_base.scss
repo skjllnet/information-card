@@ -1,6 +1,6 @@
-$color-primary: #1f1f52; //space-cadet
+$color-primary: rgb(31, 31, 82); //space-cadet
 $color-primary-light: #e6dfdc;
-$color-primary-dark: #0b0b1d;
+$color-primary-dark: rgb(11, 11, 29);
 
 $color-primary-glow: #6fc8b5;
 
@@ -26,11 +26,12 @@ body {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  height: 100vh;
   background-image: linear-gradient(
     -120deg,
-    $color-primary 0%,
-    $color-primary-dark 50%
+    rgba(31, 31, 82, 0.9),
+    rgba(11, 11, 29, 1)
   );
+  background-size: cover;
+  height: 100vh;
   color: $color-white;
 }
